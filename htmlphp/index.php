@@ -14,7 +14,6 @@
         print '<h1>Hello World!</h1>';
         print '<h1 style="color: yellow; font-size: 50px">Hi</h1>';
         print '<p style="color: green; padding-left: 200px; font-size: 100px">Again</p>';
-        print 'cool';
     ?>
 </body>
 </html>
