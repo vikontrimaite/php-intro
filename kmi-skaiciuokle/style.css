@@ -1,0 +1,9 @@
+.isvados {
+    display: flex;
+    border: 1px solid green;
+    padding: 1rem;
+}
+
+.kmi-block {
+    margin-right: 1rem;
+}
