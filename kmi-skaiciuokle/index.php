@@ -31,29 +31,33 @@
         </form>
 
         <?php
-            if ($_POST['submit']) {
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $ugis = $_POST['ugis'];
                 $svoris = $_POST['svoris'];
 
                 function calcKMI ($ugis, $svoris) {
                     if (gettype($_POST['ugis']) == "double" AND gettype($_POST['svoris']) == "integer") {
                     $kmi = $ugis / ($svoris ** 2); 
+
+                    if ($kmi <= 18.5) {
+                        $output = "Under Weight";
+                        } else if ($kmi > 18.5 AND $kmi<=24.9 ) {
+                        $output = "Normal Weight";
+                        } else if ($kmi > 24.9 AND $kmi<=29.9) {
+                        $output = "Over Weight";
+                        } else if ($kmi > 30.0) {
+                        $output = "OBESE";
+                        }
+    
+
                     }
+                    print "Jūsų KMI yra " . $kmi . " ir jis yra " . $output;
                     return $kmi;
                 }
             
-                $kmi = $kmi ($ugis, $svoris);
-                if ($kmi <= 18.5) {
-                    $output = "Under Weight";
-                    } else if ($kmi > 18.5 AND $kmi<=24.9 ) {
-                    $output = "Normal Weight";
-                    } else if ($kmi > 24.9 AND $kmi<=29.9) {
-                    $output = "Over Weight";
-                    } else if ($kmi > 30.0) {
-                    $output = "OBESE";
-                    }
-
-                    echo "Jūsų KMI yra " . $kmi . " ir jis yra " . $output;
+                // $kmi = $kmi ($ugis, $svoris);
+                
+                    
             }
       ?>
 
