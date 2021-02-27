@@ -12,10 +12,10 @@
     
     <form action="" method="POST">
             <label for="height">Your height</label>
-            <input type="text" id="height" name="height" placeholder="1.77"> 
+            <input type="text" id="height" name="height" maxlength="4" placeholder="1.77"> 
             <br>
             <label for="weight">Your weight</label>
-            <input type="text" id="weight" name="weight" placeholder="66">
+            <input type="text" id="weight" name="weight" maxlength="3" placeholder="66">
             <br>
             <input type="submit" value="Submit">
         </form>
