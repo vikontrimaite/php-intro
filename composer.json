@@ -8,5 +8,7 @@
             "email": "vikontrimaite@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "doctrine/orm": "^2.8"
+    }
 }
