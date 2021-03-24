@@ -12,5 +12,9 @@ class Employee extends Person {
     public function getBadgeId(){
     return $this->badgeId;
     }
+
+    public function printHello() {
+        echo 'Hello! ';
+    }
     
 }

@@ -12,3 +12,5 @@
     echo $newEmployee->getFirstName() . PHP_EOL;
     echo $newEmployee->getLastName() . PHP_EOL;
     echo $newEmployee->getBadgeId() . PHP_EOL;
+
+    echo $newEmployee->printHello();
