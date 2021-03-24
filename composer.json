@@ -1,0 +1,12 @@
+{
+    "name": "work/composer-demo",
+    "description": "demo project with composer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vilija Kontrimaite",
+            "email": "vikontrimaite@gmail.com"
+        }
+    ],
+    "require": {}
+}
