@@ -1,0 +1,16 @@
+{
+    "name": "vi/6-composer-doctrine",
+    "description": "demo project",
+    "authors": [
+        {
+            "name": "Vilija Kontrimaite",
+            "email": "vikontrimaite@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.8"
+    },
+    "autoload": {
+        "files": ["src/Product.php"]
+    }
+}
