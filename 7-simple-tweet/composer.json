@@ -1,0 +1,13 @@
+{
+    "name": "vi/7-simple-tweet",
+    "description": "Simple project with tweet and comments",
+    "authors": [
+        {
+            "name": "Vilija Kontrimaite",
+            "email": "vikontrimaite@gmail.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.8"
+    }
+}
